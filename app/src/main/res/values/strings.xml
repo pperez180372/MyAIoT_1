@@ -8,5 +8,6 @@
     <string name="Titulo_Dipositivo_Remoto">Dispositivo Remoto:</string>
     <string name="Titulo_Recurso_Remoto">Recurso Remoto:</string>
     <string name="Titulo_Potenciometro">Valor Potenciometro:</string>
+    <string name="Titulo_Estado">Estado:</string>
 
 </resources>

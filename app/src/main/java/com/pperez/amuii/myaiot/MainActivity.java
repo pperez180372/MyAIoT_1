@@ -1,17 +1,71 @@
 package com.pperez.amuii.myaiot;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-
+import android.widget.ScrollView;
+import android.widget.TextView;
+import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
+
+
+    synchronized void imprimir(final String cad) {
+        runOnUiThread(new Runnable() {
+            public void run() {
+                TextView ll = (TextView) findViewById(R.id.TextViewEstado);
+                ll.append(cad);
+                ScrollView ll1 = (ScrollView) findViewById(R.id.scrollView);
+                ll1.fullScroll(View.FOCUS_DOWN);
+            }});
+    }
+
+    void imprimirnl(String cad)
+    {
+        imprimir(cad+"\r\n");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /* hilo de registro */
+
+        new Thread(new Runnable() {
+            public void run() {
+                imprimirnl("Hilo de Registro");
+                // inicio flowcloud
+                // registro
+                // obtener nombre
+            }}
+        ).start();
+
+        /* hilo de prueba */
+        new Thread(new Runnable() {
+            public void run() {
+
+                while(true)
+                {
+                    imprimirnl("Hilo de prueba");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+
+
+                }
+            }}
+        ).start();
+
+
+
+
+
+
     }
 
 
