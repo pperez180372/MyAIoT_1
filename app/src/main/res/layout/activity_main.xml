@@ -136,8 +136,8 @@
                 android:layout_width="fill_parent"      android:layout_height="fill_parent">
                 <TextView    android:layout_width="wrap_content"             android:layout_height="wrap_content"
                     android:text="@string/Titulo_Potenciometro"   android:id="@+id/textView4" />
-                <TextView android:layout_width="wrap_content" android:text="     " android:id="@+id/textView6667" />
-                <TextView android:layout_width="wrap_content" android:text="XXXX1111" android:id="@+id/textView10007" />
+                <TextView android:layout_width="wrap_content"             android:layout_height="wrap_content"  android:text="     " android:id="@+id/textView6667" />
+                <TextView android:layout_width="wrap_content"             android:layout_height="wrap_content" android:text="XXXX1111" android:id="@+id/textView10007" />
             </LinearLayout>
         </LinearLayout>
 
