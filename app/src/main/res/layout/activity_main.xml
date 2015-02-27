@@ -5,7 +5,151 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:padding="@dimen/rellenodi">
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Titulo_Dipositivo_Local"
+                        android:id="@+id/textView2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   "
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fred del caloret"
+                        android:id="@+id/textView_dl_name" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Titulo_Dipositivo_Remoto"
+                        android:id="@+id/textView22" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   "
+                        android:id="@+id/textView23" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fred del caloret de mallorca"
+                        android:id="@+id/textView_rr_name" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Titulo_Recurso_Remoto"
+                        android:id="@+id/textView32" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="   "
+                        android:id="@+id/textView33" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="REcurso"
+                        android:id="@+id/textView_dr_name" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:padding="@dimen/rellenodi"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="175dp">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:id="@+id/Grafica">
+                </FrameLayout>
+            </LinearLayout>
+
+       <!--        -->
+
+            <LinearLayout    android:padding="@dimen/rellenodi"     android:background="@drawable/border"
+                android:orientation="vertical"    android:layout_width="fill_parent"    android:layout_height="144dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle">
+
+                <Button  android:layout_width="wrap_content"    android:layout_weight="1"
+                    android:layout_height="wrap_content"   android:text="LED1" android:id="@+id/button" />
+                <Button  android:layout_width="wrap_content"  android:layout_weight="1"
+                    android:layout_height="wrap_content"   android:text="LED2"   android:id="@+id/button2" />
+                <Button    android:layout_width="wrap_content"  android:layout_weight="1"
+                    android:layout_height="wrap_content"  android:text="LED3"   android:id="@+id/button4" />
+                <Button  android:layout_width="wrap_content"  android:layout_weight="1"
+                    android:layout_height="wrap_content"    android:text="LED4"  android:id="@+id/button3" />
+
+            </LinearLayout>
+            <LinearLayout       android:orientation="horizontal"
+                android:layout_width="fill_parent"      android:layout_height="fill_parent">
+                <TextView    android:layout_width="wrap_content"             android:layout_height="wrap_content"
+                    android:text="@string/Titulo_Potenciometro"   android:id="@+id/textView4" />
+                <TextView android:layout_width="wrap_content" android:text="     " android:id="@+id/textView6667" />
+                <TextView android:layout_width="wrap_content" android:text="XXXX1111" android:id="@+id/textView10007" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        -->
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
 
 </RelativeLayout>
